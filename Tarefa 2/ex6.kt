@@ -1,31 +1,17 @@
 fun main() {
     println("---------- Início do Programa ----------")
-    print("Informe o Preço: ")
-    val preco = readLine()?.toDoubleOrNull()
+    print("Informe um valor inteiro: ")
+    val v1 = readLine()?.toDoubleOrNull()
 
-    print("Informe a Quantidade: ")
-    val quantidade = readLine()?.toIntOrNull()
-
-    if (preco != null || quantidade != null) {
-        println("Preço e Quantidade informada: $preco , $quantidade")
-        
-        val result: Double
-        val qtd = quantidade ?: 0
-        val prc = preco ?: 0.0
-
-        if (qtd >= 10){
-            result = prc*qtd*0.9F
-        }
-        else{
-            result = prc*qtd
-        }
-        
-        println("Preço final: $result")
-        
-    } else {
-        println("Entrada inválida. Por favor, digite um número inteiro.")
+    print("Informe outro valor inteiro: ")
+    val v2 = readLine()?.toDoubleOrNull()
+    
+    if (v1 == v2){
+        println("Valores entrados iguais")
+    }else{
+        println("Valores entrados são diferentes")
     }
-
+    
     println("---------- Fim de programa ----------")
     println("Pressione enter para sair...")
     readLine()
