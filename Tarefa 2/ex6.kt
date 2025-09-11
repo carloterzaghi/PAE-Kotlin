@@ -1,10 +1,10 @@
 fun main() {
     println("---------- Início do Programa ----------")
     print("Informe um valor inteiro: ")
-    val v1 = readLine()?.toDoubleOrNull()
+    val v1 = readLine()?.toIntOrNull()
 
     print("Informe outro valor inteiro: ")
-    val v2 = readLine()?.toDoubleOrNull()
+    val v2 = readLine()?.toIntOrNull()
     
     if (v1 == v2){
         println("Valores entrados iguais")
